@@ -23,9 +23,28 @@ while(w<5);
 //`` (strings literal ou template string ${} chama a variável)
 function Ola(nome){
     //console.log(`Seja bem vindo, a ${nome}`)
-    alert(`seja bem vindo a ${nome}`)
-    document.write(`seja bem vindo a ${nome}`)
+    //alert(`seja bem vindo a ${nome}`)
+    //document.write(`seja bem vindo a ${nome}`)
 }
 //executando a fun~]ao Ola passando o valor
 Ola("FIAP")
 
+//Arrow Function
+
+const hello =()=>(console.log("função arrow function"))
+
+hello()
+
+//ARRAY [], OBJETO {} E METODOS ()
+
+let jogadores =[
+    {nome:"Huguinho", idade:17},
+    {nome:"Zezinho", idade:18},
+    {nome:"Luizinho", idade:19}
+]
+
+let listaJogadores = jogadores.map(function(item)  {
+    return item.idade;
+
+})
+console.log(listaJogadores)
